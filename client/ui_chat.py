@@ -155,10 +155,11 @@ class Ui_DialogChat(object):
     def OpenClik(self):
         print ("yuying")
     def retranslateUi(self, Dialog):
-        Dialog.setWindowTitle(_translate("Dialog", "亮剑", None))
-        Dialog.setToolTip(_translate("Dialog", "亮剑", None))
+        Dialog.setWindowTitle(_translate("Dialog", "chat", None))
+        Dialog.setToolTip(_translate("Dialog", "chat", None))
         self.closeButton.setText(_translate("Dialog", "关闭", None))
         self.rewriteButton.setText(_translate("Dialog", "重写", None))
+        self.audioButton.setText(_translate("Dialog", "语音", None))
         self.sendButton.setText(_translate("Dialog", "发送", None))
         self.cleanButton.setText(_translate("Dialog", "清除消息", None))
         self.recvFileButton.setText(_translate("Dialog", "接收文件", None))
