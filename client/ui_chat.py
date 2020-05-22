@@ -151,7 +151,9 @@ class Ui_DialogChat(object):
         QtCore.QObject.connect(self.rewriteButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.textEdit.clear)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
         self.Dialog = Dialog
-
+        self.audioButton.clicked.connect(self.OpenClick)
+    def OpenClik(self):
+        print ("yuying")
     def retranslateUi(self, Dialog):
         Dialog.setWindowTitle(_translate("Dialog", "亮剑", None))
         Dialog.setToolTip(_translate("Dialog", "亮剑", None))

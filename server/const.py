@@ -5,7 +5,7 @@ from utils import check_dir, check_file
 
 
 # config
-IP = '127.17.0.4'
+IP = '0.0.0.0'
 PORT = 6677
 DGRAM_FORMAT = '50s50s50s200s'
 CMD_FORMAT = '50s50s50s'
