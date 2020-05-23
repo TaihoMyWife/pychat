@@ -10,3 +10,4 @@ pychat is a C/S structure chat tool with friendly UI.It supports
 - online/offline file transmission
 - online/offline remind
 
+-我抽卡20抽就出来！ 
