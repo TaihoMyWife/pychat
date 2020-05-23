@@ -22,8 +22,8 @@ except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
 
-class Ui_Dialog(object):
-    def setupUi(self, Dialog):
+class Ui_DialogChat(object):
+    def __init__(self, Dialog):
         Dialog.setObjectName(_fromUtf8("Dialog"))
         Dialog.resize(540, 420)
         palette = QtGui.QPalette()
@@ -149,7 +149,8 @@ class Ui_Dialog(object):
         QtCore.QObject.connect(self.cleanButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.textBrowser.clear)
         QtCore.QObject.connect(self.rewriteButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.textEdit.clear)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
-
+        self.Dialog = Dialog
+        
     def retranslateUi(self, Dialog):
         Dialog.setWindowTitle(_translate("Dialog", "世豪", None))
         Dialog.setToolTip(_translate("Dialog", "世豪", None))
