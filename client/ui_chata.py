@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'chat.ui'
 #
-# Created: Fri Apr 18 23:16:51 2014
-#      by: PyQt4 UI code generator 4.10.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -26,7 +25,7 @@ except AttributeError:
 class Ui_DialogChat(object):
     def __init__(self, Dialog):
         Dialog.setObjectName(_fromUtf8("Dialog"))
-        Dialog.resize(540, 420)
+        Dialog.resize(562, 420)
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(170, 170, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -57,7 +56,7 @@ class Ui_DialogChat(object):
         Dialog.setAutoFillBackground(False)
         Dialog.setStyleSheet(_fromUtf8("background-image: url(:/pic/img/background.jpg);"))
         self.textBrowser = QtGui.QTextBrowser(Dialog)
-        self.textBrowser.setGeometry(QtCore.QRect(10, 10, 350, 200))
+        self.textBrowser.setGeometry(QtCore.QRect(10, 10, 321, 200))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -81,13 +80,13 @@ class Ui_DialogChat(object):
         self.closeButton.setFont(font)
         self.closeButton.setObjectName(_fromUtf8("closeButton"))
         self.rewriteButton = QtGui.QPushButton(Dialog)
-        self.rewriteButton.setGeometry(QtCore.QRect(150, 380, 75, 23))
+        self.rewriteButton.setGeometry(QtCore.QRect(110, 380, 75, 23))
         font = QtGui.QFont()
         font.setPointSize(10)
         self.rewriteButton.setFont(font)
         self.rewriteButton.setObjectName(_fromUtf8("rewriteButton"))
         self.sendButton = QtGui.QPushButton(Dialog)
-        self.sendButton.setGeometry(QtCore.QRect(280, 380, 75, 23))
+        self.sendButton.setGeometry(QtCore.QRect(210, 380, 75, 23))
         font = QtGui.QFont()
         font.setPointSize(10)
         self.sendButton.setFont(font)
@@ -99,7 +98,7 @@ class Ui_DialogChat(object):
         self.cleanButton.setFont(font)
         self.cleanButton.setObjectName(_fromUtf8("cleanButton"))
         self.recvFileButton = QtGui.QPushButton(Dialog)
-        self.recvFileButton.setGeometry(QtCore.QRect(280, 220, 75, 23))
+        self.recvFileButton.setGeometry(QtCore.QRect(210, 220, 75, 23))
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setBold(False)
@@ -108,13 +107,13 @@ class Ui_DialogChat(object):
         self.recvFileButton.setFont(font)
         self.recvFileButton.setObjectName(_fromUtf8("recvFileButton"))
         self.sendFileButton = QtGui.QPushButton(Dialog)
-        self.sendFileButton.setGeometry(QtCore.QRect(150, 220, 75, 23))
+        self.sendFileButton.setGeometry(QtCore.QRect(110, 220, 75, 23))
         font = QtGui.QFont()
         font.setPointSize(10)
         self.sendFileButton.setFont(font)
         self.sendFileButton.setObjectName(_fromUtf8("sendFileButton"))
         self.textEdit = QtGui.QTextEdit(Dialog)
-        self.textEdit.setGeometry(QtCore.QRect(10, 260, 351, 101))
+        self.textEdit.setGeometry(QtCore.QRect(10, 260, 321, 101))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(True)
@@ -122,10 +121,10 @@ class Ui_DialogChat(object):
         self.textEdit.setFont(font)
         self.textEdit.setObjectName(_fromUtf8("textEdit"))
         self.listWidgetFile = QtGui.QListWidget(Dialog)
-        self.listWidgetFile.setGeometry(QtCore.QRect(370, 11, 161, 351))
+        self.listWidgetFile.setGeometry(QtCore.QRect(380, 10, 161, 351))
         self.listWidgetFile.setObjectName(_fromUtf8("listWidgetFile"))
         self.label = QtGui.QLabel(Dialog)
-        self.label.setGeometry(QtCore.QRect(410, 370, 81, 20))
+        self.label.setGeometry(QtCore.QRect(420, 380, 81, 20))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(255, 0, 0))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -144,6 +143,9 @@ class Ui_DialogChat(object):
         font.setWeight(75)
         self.label.setFont(font)
         self.label.setObjectName(_fromUtf8("label"))
+        self.pushButton = QtGui.QPushButton(Dialog)
+        self.pushButton.setGeometry(QtCore.QRect(330, 220, 51, 41))
+        self.pushButton.setObjectName(_fromUtf8("pushButton"))
 
         self.retranslateUi(Dialog)
         QtCore.QObject.connect(self.closeButton, QtCore.SIGNAL(_fromUtf8("clicked()")), Dialog.close)
@@ -153,8 +155,7 @@ class Ui_DialogChat(object):
         self.Dialog = Dialog
 
     def retranslateUi(self, Dialog):
-        Dialog.setWindowTitle(_translate("Dialog", "亮剑", None))
-        Dialog.setToolTip(_translate("Dialog", "亮剑", None))
+        Dialog.setWindowTitle(_translate("Dialog", "chat", None))
         self.closeButton.setText(_translate("Dialog", "关闭", None))
         self.rewriteButton.setText(_translate("Dialog", "重写", None))
         self.sendButton.setText(_translate("Dialog", "发送", None))
@@ -162,5 +163,6 @@ class Ui_DialogChat(object):
         self.recvFileButton.setText(_translate("Dialog", "接收文件", None))
         self.sendFileButton.setText(_translate("Dialog", "发送文件", None))
         self.label.setText(_translate("Dialog", "文件列表", None))
+        self.pushButton.setText(_translate("Dialog", "语音通话", None))
 
 import img_rc

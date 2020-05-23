@@ -2,7 +2,8 @@
 
 # Form implementation generated from reading ui file 'chat.ui'
 #
-# Created by: PyQt4 UI code generator 4.12.1
+# Created: Fri Apr 18 23:16:51 2014
+#      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -150,10 +151,10 @@ class Ui_DialogChat(object):
         QtCore.QObject.connect(self.rewriteButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.textEdit.clear)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
         self.Dialog = Dialog
-        
+
     def retranslateUi(self, Dialog):
-        Dialog.setWindowTitle(_translate("Dialog", "世豪", None))
-        Dialog.setToolTip(_translate("Dialog", "世豪", None))
+        Dialog.setWindowTitle(_translate("Dialog", "亮剑", None))
+        Dialog.setToolTip(_translate("Dialog", "亮剑", None))
         self.closeButton.setText(_translate("Dialog", "关闭", None))
         self.rewriteButton.setText(_translate("Dialog", "重写", None))
         self.sendButton.setText(_translate("Dialog", "发送", None))
